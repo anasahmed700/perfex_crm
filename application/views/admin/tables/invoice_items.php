@@ -13,7 +13,7 @@ $aColumns = array_merge($aColumns, [
     'long_description',
     db_prefix() . 'items.rate',
     't1.taxrate as taxrate_1',
-    't2.taxrate as taxrate_2',
+    // 't2.taxrate as taxrate_2',
     'unit',
     db_prefix() . 'items_groups.name',
     ]);
@@ -70,7 +70,8 @@ foreach ($rResult as $aRow) {
                 $aRow['taxrate_1'] = 0;
             }
             $_data = '<span data-toggle="tooltip" title="' . $aRow['taxname_1'] . '" data-taxid="' . $aRow['tax_id_1'] . '">' . $aRow['taxrate_1'] . '%' . '</span>';
-        } elseif ($aColumns[$i] == 't2.taxrate as taxrate_2') {
+        } 
+        elseif ($aColumns[$i] == 't2.taxrate as taxrate_2') {
             if (!$aRow['taxrate_2']) {
                 $aRow['taxrate_2'] = 0;
             }

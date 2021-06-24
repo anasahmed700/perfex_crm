@@ -455,6 +455,7 @@ class Invoices_model extends App_Model
                                     'rel_id'   => $_task_id,
                                     'rel_type' => 'task',
                                 ]);
+                                // $this->db->query("UPDATE `tblitems` SET `unit` = `unit` - 1 WHERE `id` = $itemid");
                         }
                     } elseif (isset($billed_expenses[$key])) {
                         foreach ($billed_expenses[$key] as $_expense_id) {
@@ -463,6 +464,7 @@ class Invoices_model extends App_Model
                                     'rel_id'   => $_expense_id,
                                     'rel_type' => 'expense',
                                 ]);
+                                // $this->db->query("UPDATE `tblitems` SET `unit` = `unit` - 1 WHERE `id` = $itemid");
                         }
                     }
                     _maybe_insert_post_item_tax($itemid, $item, $insert_id, 'invoice');

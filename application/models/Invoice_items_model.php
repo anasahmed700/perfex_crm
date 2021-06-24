@@ -81,9 +81,9 @@ class Invoice_items_model extends App_Model
             unset($data['tax']);
         }
 
-        if (isset($data['tax2']) && $data['tax2'] == '') {
-            unset($data['tax2']);
-        }
+        // if (isset($data['tax2']) && $data['tax2'] == '') {
+        //     unset($data['tax2']);
+        // }
 
         if (isset($data['group_id']) && $data['group_id'] == '') {
             $data['group_id'] = 0;
@@ -143,9 +143,9 @@ class Invoice_items_model extends App_Model
             $data['tax'] = null;
         }
 
-        if (isset($data['tax2']) && $data['tax2'] == '') {
-            $data['tax2'] = null;
-        }
+        // if (isset($data['tax2']) && $data['tax2'] == '') {
+        //     $data['tax2'] = null;
+        // }
 
         if (isset($data['custom_fields'])) {
             $custom_fields = $data['custom_fields'];
