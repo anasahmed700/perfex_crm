@@ -22,13 +22,13 @@
                         <a href="#" class="font-medium" onclick="init_report(this,'payments-received'); return false;"><i class="fa fa-caret-down" aria-hidden="true"></i> <?php echo _l('payments_received'); ?></a>
                       </p>
                       <hr class="hr-10" />
-                      <p>
+                      <!-- <p>
                         <a href="#" class="font-medium" onclick="init_report(this,'credit-notes'); return false;"><i class="fa fa-caret-down" aria-hidden="true"></i> <?php echo _l('credit_notes_report'); ?></a>
                       </p>
-                      <hr class="hr-10" />
-                      <p>
+                      <hr class="hr-10" /> -->
+                      <!-- <p>
                       <a href="#" class="font-medium" onclick="init_report(this,'proposals-report'); return false;"><i class="fa fa-caret-down" aria-hidden="true"></i> <?php echo _l('proposals_report'); ?></a></p>
-                      <hr class="hr-10" />
+                      <hr class="hr-10" /> -->
                       <p>
                         <a href="#" class="font-medium" onclick="init_report(this,'estimates-report'); return false;"><i class="fa fa-caret-down" aria-hidden="true"></i> <?php echo _l('estimates_report'); ?></a>
                       </p>
@@ -50,8 +50,8 @@
                     <p><a href="#" class="font-medium" onclick="init_report(this,'total-income'); return false;"><i class="fa fa-caret-down" aria-hidden="true"></i> <?php echo _l('report_sales_type_income'); ?></a></p>
                     <hr class="hr-10" />
                     <p><a href="#" class="font-medium" onclick="init_report(this,'payment-modes'); return false;"><i class="fa fa-caret-down" aria-hidden="true"></i> <?php echo _l('payment_modes_report'); ?></a></p>
-                    <hr class="hr-10" />
-                    <p><a href="#" class="font-medium" onclick="init_report(this,'customers-group'); return false;"><i class="fa fa-caret-down" aria-hidden="true"></i> <?php echo _l('report_by_customer_groups'); ?></a></p>
+                    <!-- <hr class="hr-10" />
+                    <p><a href="#" class="font-medium" onclick="init_report(this,'customers-group'); return false;"><i class="fa fa-caret-down" aria-hidden="true"></i> <?php echo _l('report_by_customer_groups'); ?></a></p> -->
                  </div>
                  <div class="col-md-4">
                       <div class="bg-light-gray border-radius-4">

@@ -1234,7 +1234,7 @@ $lang['contract_attachment']                  = 'Attachment';
 # Admin Aside Menu
 $lang['als_expenses']           = 'Expenses';
 $lang['als_reports_expenses']   = 'Expenses';
-$lang['als_expenses_vs_income'] = 'Expenses vs Income';
+$lang['als_expenses_vs_income'] = 'Profit and loss';
 
 # Invoices
 $lang['invoice_attach_file']           = 'Attach File';
