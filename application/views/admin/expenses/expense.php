@@ -182,7 +182,7 @@
 
                         </div>
                      </div>
-                     <div class="col-md-6">
+                     <!-- <div class="col-md-6">
                         <div class="form-group select-placeholder">
                            <label class="control-label" for="tax2"><?php echo _l('tax_2'); ?></label>
                            <select class="selectpicker display-block" data-width="100%" name="tax2" data-none-selected-text="<?php echo _l('dropdown_non_selected_tex'); ?>" <?php if(!isset($expense) || isset($expense) && $expense->tax == 0){echo 'disabled';} ?>>
@@ -204,6 +204,26 @@
                               <?php } ?>
                            </select>
                         </div>
+                     </div> -->
+                     <div class="form-group select-placeholder col-md-6"<?php if(isset($expense) && !empty($expense->recurring_from)){ ?> data-toggle="tooltip" data-title="<?php echo _l('create_recurring_from_child_error_message', [_l('expense_lowercase'),_l('expense_lowercase'), _l('expense_lowercase')]); ?>"<?php } ?>>
+                        <label for="repeat_every" class="control-label"><?php echo _l('expense_repeat_every'); ?></label>
+                        <select
+                        name="repeat_every"
+                        id="repeat_every"
+                        class="selectpicker"
+                        data-width="100%"
+                        data-none-selected-text="<?php echo _l('dropdown_non_selected_tex'); ?>"
+                        <?php if(isset($expense) && !empty($expense->recurring_from)){ ?> disabled <?php } ?>>
+                           <option value=""></option>
+                           <option value="1-week" <?php if(isset($expense) && $expense->repeat_every == 1 && $expense->recurring_type == 'week'){echo 'selected';} ?>><?php echo _l('week'); ?></option>
+                           <option value="2-week" <?php if(isset($expense) && $expense->repeat_every == 2 && $expense->recurring_type == 'week'){echo 'selected';} ?>>2 <?php echo _l('weeks'); ?></option>
+                           <option value="1-month" <?php if(isset($expense) && $expense->repeat_every == 1 && $expense->recurring_type == 'month'){echo 'selected';} ?>>1 <?php echo _l('month'); ?></option>
+                           <option value="2-month" <?php if(isset($expense) && $expense->repeat_every == 2 && $expense->recurring_type == 'month'){echo 'selected';} ?>>2 <?php echo _l('months'); ?></option>
+                           <option value="3-month" <?php if(isset($expense) && $expense->repeat_every == 3 && $expense->recurring_type == 'month'){echo 'selected';} ?>>3 <?php echo _l('months'); ?></option>
+                           <option value="6-month" <?php if(isset($expense) && $expense->repeat_every == 6 && $expense->recurring_type == 'month'){echo 'selected';} ?>>6 <?php echo _l('months'); ?></option>
+                           <option value="1-year" <?php if(isset($expense) && $expense->repeat_every == 1 && $expense->recurring_type == 'year'){echo 'selected';} ?>>1 <?php echo _l('year'); ?></option>
+                           <option value="custom" <?php if(isset($expense) && $expense->custom_recurring == 1){echo 'selected';} ?>><?php echo _l('recurring_custom'); ?></option>
+                        </select>
                      </div>
                      <?php if(!isset($expense)) { ?>
                       <div class="col-md-12 hide" id="tax_subtract">
@@ -232,26 +252,7 @@
                         <?php echo render_input('reference_no','expense_add_edit_reference_no',$value); ?>
                      </div>
                   </div>
-                  <div class="form-group select-placeholder"<?php if(isset($expense) && !empty($expense->recurring_from)){ ?> data-toggle="tooltip" data-title="<?php echo _l('create_recurring_from_child_error_message', [_l('expense_lowercase'),_l('expense_lowercase'), _l('expense_lowercase')]); ?>"<?php } ?>>
-                     <label for="repeat_every" class="control-label"><?php echo _l('expense_repeat_every'); ?></label>
-                     <select
-                     name="repeat_every"
-                     id="repeat_every"
-                     class="selectpicker"
-                     data-width="100%"
-                     data-none-selected-text="<?php echo _l('dropdown_non_selected_tex'); ?>"
-                     <?php if(isset($expense) && !empty($expense->recurring_from)){ ?> disabled <?php } ?>>
-                        <option value=""></option>
-                        <option value="1-week" <?php if(isset($expense) && $expense->repeat_every == 1 && $expense->recurring_type == 'week'){echo 'selected';} ?>><?php echo _l('week'); ?></option>
-                        <option value="2-week" <?php if(isset($expense) && $expense->repeat_every == 2 && $expense->recurring_type == 'week'){echo 'selected';} ?>>2 <?php echo _l('weeks'); ?></option>
-                        <option value="1-month" <?php if(isset($expense) && $expense->repeat_every == 1 && $expense->recurring_type == 'month'){echo 'selected';} ?>>1 <?php echo _l('month'); ?></option>
-                        <option value="2-month" <?php if(isset($expense) && $expense->repeat_every == 2 && $expense->recurring_type == 'month'){echo 'selected';} ?>>2 <?php echo _l('months'); ?></option>
-                        <option value="3-month" <?php if(isset($expense) && $expense->repeat_every == 3 && $expense->recurring_type == 'month'){echo 'selected';} ?>>3 <?php echo _l('months'); ?></option>
-                        <option value="6-month" <?php if(isset($expense) && $expense->repeat_every == 6 && $expense->recurring_type == 'month'){echo 'selected';} ?>>6 <?php echo _l('months'); ?></option>
-                        <option value="1-year" <?php if(isset($expense) && $expense->repeat_every == 1 && $expense->recurring_type == 'year'){echo 'selected';} ?>>1 <?php echo _l('year'); ?></option>
-                        <option value="custom" <?php if(isset($expense) && $expense->custom_recurring == 1){echo 'selected';} ?>><?php echo _l('recurring_custom'); ?></option>
-                     </select>
-                  </div>
+                  
                   <div class="recurring_custom <?php if((isset($expense) && $expense->custom_recurring != 1) || (!isset($expense))){echo 'hide';} ?>">
                      <div class="row">
                         <div class="col-md-6">

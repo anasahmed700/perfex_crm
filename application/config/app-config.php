@@ -50,7 +50,7 @@ define('APP_DB_PASSWORD', '');
 /**
  * The name of the database you want to connect to
  */
-define('APP_DB_NAME', 'project_db');
+define('APP_DB_NAME', 'crm_db');
 
 /**
  * @since  2.3.0
