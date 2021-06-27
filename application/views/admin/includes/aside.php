@@ -9,6 +9,32 @@
    }
    }
    ?>
+   <style>
+   li.menu-item-tasks{
+      display: none;
+   }
+   li.menu-item-subscriptions{
+      display: none;
+   }
+   li.menu-item-support{
+      display: none;
+   }
+   li.menu-item-leads{
+      display: none;
+   }
+   li.menu-item-knowledge-base{
+      display: none;
+   }
+   li.menu-item-projects{
+      display: none;
+   }
+   li.menu-item-contracts{
+      display: none;
+   }
+   li.menu-item-utilities{
+      display: none;
+   }
+      </style>
 <aside id="menu" class="sidebar">
    <ul class="nav metis-menu" id="side-menu">
       <li class="dashboard_user<?php if($totalQuickActionsRemoved == count($quickActions)){echo ' dashboard-user-no-qa';}?>">
