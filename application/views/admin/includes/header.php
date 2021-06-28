@@ -15,7 +15,7 @@ ob_start();
 $top_search_area = ob_get_contents();
 ob_end_clean();
 ?>
-<div id="header">
+<div id="header" style="background: royalblue;">
    <div class="hide-menu"><i class="fa fa-align-left"></i></div>
    <div id="logo">
       <?php get_company_logo(get_admin_uri().'/') ?>

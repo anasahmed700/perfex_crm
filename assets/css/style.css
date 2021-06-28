@@ -576,7 +576,7 @@ fieldset[disabled] .btn-danger.active {
 body {
     font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: #fff;
-    background: #626f80;
+    background: #8aa0e4;
     font-size: 13px;
     color: #323a45;
 }
@@ -1476,7 +1476,7 @@ a.notification-top {
 }
 
 #side-menu {
-    background: #626f80;
+    background: #8aa0e4;
 }
 
 #side-menu .dashboard {
@@ -1648,7 +1648,7 @@ li .nav-second-level li {
 }
 
 #setup-menu-wrapper {
-    background-color: #626f80;
+    background-color: #8aa0e4;
     position: absolute;
     top: 63px;
     width: 210px !important;

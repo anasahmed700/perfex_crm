@@ -35,8 +35,8 @@
       display: none;
    }
       </style>
-<aside id="menu" class="sidebar">
-   <ul class="nav metis-menu" id="side-menu">
+<aside id="menu" class="sidebar" style="background: #8aa0e4;">
+   <ul class="nav metis-menu" id="side-menu" style="background: #8aa0e4;">
       <li class="dashboard_user<?php if($totalQuickActionsRemoved == count($quickActions)){echo ' dashboard-user-no-qa';}?>">
          <?php echo _l('welcome_top',$current_user->firstname); ?> <i class="fa fa-power-off top-left-logout pull-right" data-toggle="tooltip" data-title="<?php echo _l('nav_logout'); ?>" data-placement="right" onclick="logout(); return false;"></i>
       </li>
