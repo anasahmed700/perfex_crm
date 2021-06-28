@@ -71,7 +71,7 @@
                           $hide_billable_options = '';
                      }
                      ?>
-                  <div class="checkbox checkbox-primary billable <?php echo $hide_billable_options; ?>">
+                  <!-- <div class="checkbox checkbox-primary billable <?php echo $hide_billable_options; ?>">
                      <input type="checkbox" id="billable" <?php if(isset($expense) && $expense->invoiceid !== NULL){echo 'disabled'; } ?> name="billable" <?php if(isset($expense)){if($expense->billable == 1){echo 'checked';}}; ?>>
                      <label for="billable" <?php if(isset($expense) && $expense->invoiceid !== NULL){echo 'data-toggle="tooltip" title="'._l('expense_already_invoiced').'"'; } ?>><?php echo _l('expense_add_edit_billable'); ?></label>
                   </div>
@@ -88,7 +88,7 @@
                          echo '<option value="'.$rel_val['id'].'" selected>'.$rel_val['name'].'</option>';
                         } ?>
                      </select>
-                  </div>
+                  </div> -->
                   <?php $hide_project_selector = ' hide';
                      // Show selector only if expense is already added and there is no client linked to the expense or isset customer id
                      if((isset($expense) && $expense->clientid != 0) || isset($customer_id)){
