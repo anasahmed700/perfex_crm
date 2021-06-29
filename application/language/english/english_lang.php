@@ -190,9 +190,9 @@ $lang['invoice_items']                     = 'Invoice Items';
 $lang['invoice_item']                      = 'Invoice Item';
 $lang['new_invoice_item']                  = 'New Item';
 $lang['invoice_item_lowercase']            = 'invoice item';
-$lang['invoice_items_list_description']    = 'Description';
+$lang['invoice_items_list_description']    = 'Item Name';
 $lang['invoice_items_list_rate']           = 'Rate';
-$lang['invoice_item_add_edit_description'] = 'Description';
+$lang['invoice_item_add_edit_description'] = 'Item Name';
 $lang['invoice_item_add_edit_rate']        = 'Rate';
 $lang['invoice_item_edit_heading']         = 'Edit Item';
 $lang['invoice_item_add_heading']          = 'Add New Item';
@@ -1144,7 +1144,7 @@ $lang['acs_contract_types'] = 'Contract Types';
 
 # Version 1.0.4
 # Invoice Items
-$lang['invoice_item_long_description'] = 'Long Description';
+$lang['invoice_item_long_description'] = 'Description';
 
 # Customers
 $lang['clients_list_phone']                = 'Phone';

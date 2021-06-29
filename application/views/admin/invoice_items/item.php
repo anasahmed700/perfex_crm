@@ -24,7 +24,7 @@
                             <?php echo _l('invoice_item_add_edit_rate_currency',$base_currency->name . ' <small>('._l('base_currency_string').')</small>'); ?></label>
                             <input type="number" id="rate" name="rate" class="form-control" value="">
                         </div>
-                        <?php
+                        <!-- <?php
                             foreach($currencies as $currency){
                                 if($currency['isdefault'] == 0 && total_rows(db_prefix().'clients',array('default_currency'=>$currency['id'])) > 0){ ?>
                                 <div class="form-group">
@@ -34,7 +34,7 @@
                                     </div>
                              <?php   }
                             }
-                        ?>
+                        ?> -->
                         <div class="row">
                             <div class="col-md-6">
                              <div class="form-group">
