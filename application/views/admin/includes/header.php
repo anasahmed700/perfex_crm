@@ -17,7 +17,7 @@ ob_end_clean();
 ?>
 <div id="header" style="background: #0f2a5f;">
    <div class="hide-menu"><i class="fa fa-align-left"></i></div>
-   <div id="logo">
+   <div id="logo" style="padding: 0px;">
       <?php get_company_logo(get_admin_uri().'/') ?>
    </div>
    <nav>
