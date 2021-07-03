@@ -1,6 +1,6 @@
 <?php defined('BASEPATH') or exit('No direct script access allowed'); ?>
 <?php $this->load->view('authentication/includes/head.php'); ?>
-<body style="background: royalblue;" class="login_admin"<?php if(is_rtl()){ echo ' dir="rtl"'; } ?>>
+<body style="background: #0f2a5f;" class="login_admin"<?php if(is_rtl()){ echo ' dir="rtl"'; } ?>>
  <div class="container">
   <div class="row">
    <div class="col-md-4 col-md-offset-4 col-sm-8 col-sm-offset-2 authentication-form-wrapper">

@@ -4,8 +4,8 @@
 	<div class="content">
 		<div class="row">
 			<?php
-			echo form_open($this->uri->uri_string(),array('id'=>'invoice-form','class'=>'_transaction_form invoice-form'));
-			if(isset($invoice)){
+			echo form_open($this->uri->uri_string(), array('id' => 'invoice-form', 'class' => '_transaction_form invoice-form'));
+			if (isset($invoice)) {
 				echo form_hidden('isedit');
 			}
 			?>
@@ -19,15 +19,16 @@
 </div>
 <?php init_tail(); ?>
 <script>
-	$(function(){
+	$(function() {
 		validate_invoice_form();
-	    // Init accountacy currency symbol
-	    init_currency();
-	    // Project ajax search
-	    init_ajax_project_search_by_customer_id();
-	    // Maybe items ajax search
-	    init_ajax_search('items','#item_select.ajax-search',undefined,admin_url+'items/search');
+		// Init accountacy currency symbol
+		init_currency();
+		// Project ajax search
+		init_ajax_project_search_by_customer_id();
+		// Maybe items ajax search
+		init_ajax_search('items', '#item_select.ajax-search', undefined, admin_url + 'items/search');
 	});
 </script>
 </body>
+
 </html>

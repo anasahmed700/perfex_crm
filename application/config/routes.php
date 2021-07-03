@@ -187,3 +187,11 @@ $route['survey/(:num)/(:any)'] = 'surveys/participate/index/$1/$2';
 if (file_exists(APPPATH . 'config/my_routes.php')) {
     include_once(APPPATH . 'config/my_routes.php');
 }
+
+$route['vendors'] = 'vendors';
+$route['404_override'] = 'custom404'; 
+$route['vendors/create'] = 'vendors/create';
+$route['vendors/create'] = 'vendors/save';
+$route['vendors/edit/(:any)'] = 'vendors/edit/$1';
+$route['vendors/view/(:any)'] = 'vendors/view/$1';
+$route['vendors/(:any)'] = 'vendors/view/$1';

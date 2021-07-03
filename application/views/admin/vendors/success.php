@@ -1,0 +1,1 @@
+<p>Vendor added successfully!</p>
